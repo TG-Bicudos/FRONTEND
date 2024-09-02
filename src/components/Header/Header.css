@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    background-color: black;
+    height: 7vh;
+    align-items: center; 
+    justify-content: flex-start;
+}
+
+.botoes {
+    display: flex; 
+    height: 3vh;
+}
+
+.botao {
+    margin-left: 3vh;
+    cursor: pointer;
+    height: 3vh;
+    width: 15vh;
+    font-size: 1.6vh;
+}

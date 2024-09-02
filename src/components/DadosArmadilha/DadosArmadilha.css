@@ -1,0 +1,35 @@
+.botaoFechar{
+    width: 60px;
+}
+
+.dadosArmadilha{
+    width: 100%;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 26vh;
+}
+  
+.dadosTitulo {
+    font-size: 4vh;
+    background-color: #111111;
+    margin-top: 0px;
+    text-align: center;
+    width: 121.9vh;
+}
+
+.dadosTexto{
+    font-size: 3vh;
+    margin-top: 1vh;
+    margin-left: 8vh;
+}
+
+.dadosFotos{
+    display: flex;
+    margin-top: 28vh;
+    margin-left: 2.7vh;
+    box-sizing: border-box;
+}

@@ -1,0 +1,67 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.conteudoModal {
+  background: white;
+  padding: 2rem; 
+  border-radius: 0.5rem; 
+  width: 90%;
+  max-width: 500px; 
+  box-sizing: border-box;
+  font-size: 1rem; 
+}
+
+.form-group {
+  margin-bottom: 1rem; 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem; 
+}
+
+.form-group input, select {
+  height: 2rem; 
+  width: 100%;
+  padding: 0.5rem; 
+  box-sizing: border-box;
+}
+
+.adicionar, .cancelar {
+  display: inline-block; 
+  margin-top: 1rem;
+  background: rgb(14, 192, 165);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem; 
+  cursor: pointer;
+  border-radius: 0.25rem; 
+}
+
+.cancelar {
+  background: rgb(161, 16, 16);
+  margin-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .conteudoModal {
+      width: 95%;
+      padding: 1rem;
+    }
+  
+    .adicionar, .cancelar {
+      padding: 0.5rem 1rem;
+    }
+  }
+  

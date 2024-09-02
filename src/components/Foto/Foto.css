@@ -1,0 +1,23 @@
+.foto{
+    border: 0.5vh solid rgb(0, 0, 0);
+    margin-left: 4vh;
+    height: 25vh;
+    width: 24.9vh;
+}
+
+.conteudoFoto{
+    display: flex;
+    flex-direction: column;
+}
+
+.imagemFoto{
+    width: 23vh;
+    height: 20vh;
+}
+
+.dataFoto{
+    color: white;
+    font-size: 2.7vh;
+    margin-top: 0.5vh;
+    margin-left: 1vh;
+}
