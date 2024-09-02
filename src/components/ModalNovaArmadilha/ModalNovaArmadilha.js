@@ -1,8 +1,8 @@
 import React from 'react';
 import './ModalNovaArmadilha.css';
 
-function ModalNovaArmadilha({ isOpen, onClose }) {
-  if (!isOpen) return null;
+function ModalNovaArmadilha({ aberto, fechado }) {
+  if (!aberto) return null;
 
   return (
     <div className="modalOverlay">
@@ -25,7 +25,7 @@ function ModalNovaArmadilha({ isOpen, onClose }) {
           </div>
 
           <button type="submit" className='adicionar'>Adicionar</button>
-          <button onClick={onClose} className='cancelar'>Cancelar</button>
+          <button onClick={fechado} className='cancelar'>Cancelar</button>
         </form>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React from 'react';
 import './ModalNovaPasta.css'; 
 
-function ModalNovaPasta({ isOpen, onClose }) {
-  if (!isOpen) return null;
+function ModalNovaPasta({ aberto, fechado }) {
+  if (!aberto) return null;
 
   return (
     <div className="modalOverlay">
@@ -29,7 +29,7 @@ function ModalNovaPasta({ isOpen, onClose }) {
           </div>
 
           <button type="submit" className='adicionar'>Adicionar</button>
-          <button onClick={onClose} className='cancelar'>Cancelar</button>
+          <button onClick={fechado} className='cancelar'>Cancelar</button>
         </form>
       </div>
     </div>
