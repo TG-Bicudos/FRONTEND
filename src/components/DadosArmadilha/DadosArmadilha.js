@@ -49,20 +49,15 @@ function DadosArmadilha({ ocultarDados }) {
     return( 
        <div className='dadosArmadilha'>
         <div className='dados'>
-            <p className='dadosTitulo'> Dados da Armadilha </p>
+            <p className='dadosTitulo'>Dados da Armadilha </p>
+            <button onClick={ocultarDados} className='botaoFechar'>X</button>
             <p className='dadosTexto'>Nome da armadilha: </p>
             <p className='dadosTexto'>Latitude: </p>
             <p className='dadosTexto'>Longitude: </p>
 
             <div className='dadosFotos'>
-                {/* <Foto/>
-                <Foto/>
-                <Foto/>
-                <Foto/> */}
                 <ListaImagens/>
             </div>
-
-            <button onClick={ocultarDados} className='botaoFechar'>Fechar</button>
         </div>
        </div> 
     );

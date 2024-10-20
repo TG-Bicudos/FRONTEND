@@ -1,7 +1,3 @@
-.botaoFechar{
-    width: 60px;
-}
-
 .dadosArmadilha{
     width: 100%;
 }
@@ -18,7 +14,14 @@
     background-color: #111111;
     margin-top: 0px;
     text-align: center;
-    width: 121.9vh;
+    width: 123.5vh;
+    height: 7vh;
+    padding-top: 1vh;
+}
+
+.botaoFechar{
+    width: 60px;
+    margin-left: 5vh;
 }
 
 .dadosTexto{
@@ -29,7 +32,7 @@
 
 .dadosFotos{
     display: flex;
-    margin-top: 28vh;
+    margin-top: 22vh;
     margin-left: 2.7vh;
     box-sizing: border-box;
 }

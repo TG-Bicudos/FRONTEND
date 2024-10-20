@@ -1,0 +1,60 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vh; 
+    margin-left: 7vh;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100vh; 
+    justify-content: space-between;
+}
+
+.carousel-item {
+    flex: 0 0 200px;
+    margin: 10px;
+}
+
+button.prev, button.next {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button.prev {
+    left: -4vh; 
+    font-size: 2vh;
+}
+
+button.next {
+    right: -6vh; 
+    font-size: 2vh;
+}
+
+.foto{
+    border: 0.5vh solid rgb(0, 0, 0);
+    margin-left: 4vh;
+    height: 50vh;
+    width: 23vh;
+    object-fit: 'cover'
+}
+
+.imagemFoto{
+    width: 25vh;
+    height: 25vh;
+}
+
+.dataFoto{
+    color: white;
+    font-size: 3vh;
+    margin-top: 0vh;
+}

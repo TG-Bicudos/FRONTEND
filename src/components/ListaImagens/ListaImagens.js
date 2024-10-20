@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import './ListaImagens.css';
 
 const ListaImagens = () => {
   const [images, setImages] = useState([]); // Estado para armazenar a lista de imagens
   const [loading, setLoading] = useState(true); // Estado para mostrar se está carregando
   const [error, setError] = useState(null); // Estado para tratar erros
+  const [currentIndex, setCurrentIndex] = useState(0); // Estado para controlar a posição do carrossel
+
+  const itemsPerPage = 3; 
 
   // Função para buscar as imagens da API
   const fetchImages = async () => {
@@ -25,29 +29,43 @@ const ListaImagens = () => {
     fetchImages();
   }, []);
 
-  if (loading) return <p>Carregando imagens...</p>; 
-  if (error) return <p>Erro: {error}</p>; 
+  const prevImage = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? images.length - itemsPerPage : Math.max(prevIndex - itemsPerPage, 0)
+    );
+  };
+
+  const nextImage = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex + itemsPerPage >= images.length ? 0 : prevIndex + itemsPerPage
+    );
+  };
+
+  if (loading) return <p>Carregando imagens...</p>;
+  if (error) return <p>Erro: {error}</p>;
 
   return (
     <div>
-      <h2>Lista de Imagens</h2>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {images.length > 0 ? (
-          images.map((image) => (
-            <div key={image.id} style={{ margin: '10px' }}>
-              <img
-                src={`http://localhost:3333/file/${image.id}`} // URL da imagem
-                alt={image.name}
-                style={{ width: '200px', height: '200px', objectFit: 'cover' }}
-              />
-              <p>{image.name}</p>
-              <p>{new Date(image.uploadedAt).toLocaleDateString()}</p> 
+      <div className="carousel-container">
+        <button className="prev" onClick={prevImage}>&lt;</button>
+        <div className="carousel">
+          {images.length > 0 ? (
+            images
+              .slice(currentIndex, currentIndex + itemsPerPage)
+              .map((image) => (
+                <div key={image.id} className="carousel-item">
+                  <div className='foto'>
+                    <img className='imagemFoto' src={`http://localhost:3333/file/${image.id}`} alt={image.name}/>
 
-            </div>
-          ))
-        ) : (
-          <p>Nenhuma imagem encontrada.</p>
-        )}
+                    <p className="dataFoto">{new Date(image.uploadedAt).toLocaleDateString()}</p>
+                  </div>
+                </div>
+              ))
+          ) : (
+            <p>Nenhuma imagem encontrada.</p>
+          )}
+        </div>
+        <button className="next" onClick={nextImage}>&gt;</button>
       </div>
     </div>
   );
