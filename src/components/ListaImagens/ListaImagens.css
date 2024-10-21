@@ -1,20 +1,20 @@
-.carousel-container {
+.carrossel-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100vh; 
-    margin-left: 7vh;
+    width: 90vh; 
+    margin-left: 10vh;
 }
 
-.carousel {
+.carrossel {
     display: flex;
     overflow: hidden;
     width: 100vh; 
     justify-content: space-between;
 }
 
-.carousel-item {
+.carrossel-item {
     flex: 0 0 200px;
     margin: 10px;
 }
@@ -36,16 +36,14 @@ button.prev {
 }
 
 button.next {
-    right: -6vh; 
+    right: -8vh; 
     font-size: 2vh;
 }
 
 .foto{
     border: 0.5vh solid rgb(0, 0, 0);
-    margin-left: 4vh;
     height: 50vh;
-    width: 23vh;
-    object-fit: 'cover'
+    width: 23vh !important;
 }
 
 .imagemFoto{
