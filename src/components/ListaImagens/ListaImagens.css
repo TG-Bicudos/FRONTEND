@@ -15,17 +15,17 @@
 }
 
 .carrossel-item {
-    flex: 0 0 200px;
-    margin: 10px;
+    flex: 0 0 20vh;
+    margin: 1vh;
 }
 
 button.prev, button.next {
     background-color: #ccc;
     border: none;
-    padding: 10px;
+    padding: 1.5vh;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 14vh;
     transform: translateY(-50%);
     z-index: 1;
 }
@@ -49,6 +49,7 @@ button.next {
 .imagemFoto{
     width: 25vh;
     height: 25vh;
+    cursor: pointer;
 }
 
 .dataFoto{

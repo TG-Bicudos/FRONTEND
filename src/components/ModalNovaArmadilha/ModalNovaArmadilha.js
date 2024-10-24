@@ -21,7 +21,7 @@ function ModalNovaArmadilha({ aberto, fechado }) {
     event.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:3333/armadilhas`, {
+      await fetch(`http://localhost:3333/armadilhas`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(formData),  
