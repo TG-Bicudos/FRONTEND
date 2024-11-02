@@ -1,7 +1,7 @@
 import './App.css';
 import Mapa from './components/Mapa/Mapa';
 import Header from './components/Header/Header';
-import Foto from './components/Foto/Foto';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -12,7 +12,6 @@ function App() {
           <Mapa/>
         </div>
         <div className='dados'>
-
         </div>
       </div>
     </div>

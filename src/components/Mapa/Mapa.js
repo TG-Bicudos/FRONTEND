@@ -33,7 +33,7 @@ function Mapa() {
   return (
     <div className="mapa-container">
       <div className="mapa">
-        <MapContainer center={marcadorTrap1} zoom={10} scrollWheelZoom={true} style={{ height: "93vh", width: "85vh" }}>
+        <MapContainer center={marcadorTrap1} zoom={10} scrollWheelZoom={true} style={{ height: "90vh", width: "85vh" }}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

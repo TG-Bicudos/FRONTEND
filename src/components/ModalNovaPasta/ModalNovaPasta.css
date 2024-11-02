@@ -54,6 +54,10 @@
   margin-left: 1rem;
 }
 
+.selecao{
+  height: 6vh;
+}
+
 @media (max-width: 768px) {
     .conteudoModal {
       width: 95%;

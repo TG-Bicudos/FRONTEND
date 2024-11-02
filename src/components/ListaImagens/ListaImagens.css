@@ -4,7 +4,7 @@
     justify-content: center;
     position: relative;
     width: 90vh; 
-    margin-left: 10vh;
+    margin-left: 16vh;
 }
 
 .carrossel {
@@ -31,7 +31,7 @@ button.prev, button.next {
 }
 
 button.prev {
-    left: -4vh; 
+    left: -8vh; 
     font-size: 2vh;
 }
 
@@ -42,8 +42,8 @@ button.next {
 
 .foto{
     border: 0.5vh solid rgb(0, 0, 0);
-    height: 50vh;
-    width: 23vh !important;
+    height: 31vh;
+    width: 26vh !important;
 }
 
 .imagemFoto{
@@ -55,5 +55,6 @@ button.next {
 .dataFoto{
     color: white;
     font-size: 3vh;
-    margin-top: 0vh;
+    margin-top: 0.3vh;
+    margin-left: 1vh;
 }

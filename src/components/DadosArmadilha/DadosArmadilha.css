@@ -14,9 +14,9 @@
     background-color: #111111;
     margin-top: 0px;
     text-align: center;
-    width: 123.5vh;
+    width: 136.5vh;
     height: 7vh;
-    padding-top: 1vh;
+    padding-top: 0.2vh;
 }
 
 .botaoFechar{
@@ -32,7 +32,7 @@
 
 .dadosFotos{
     display: flex;
-    margin-top: 22vh;
+    margin-top: 10vh;
     margin-left: 2.7vh;
     box-sizing: border-box;
 }
